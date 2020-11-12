@@ -1,0 +1,414 @@
+/* Default css */
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+	font-family: 'Work Sans', sans-serif;
+}
+img{
+	max-width: 100%;
+}
+.shadow{
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+/* Header css */
+.ray-header .navbar-brand {
+	font-size: 25px;
+	font-weight: 500;
+	padding: 0;
+}
+.ray-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	z-index: 99;
+}
+.ray-header .navbar-brand img {
+	width: auto;
+	height: 50px;
+	margin-right: 10px;
+}
+
+ul.ray-menu li{
+	margin-right: 40px;
+}
+ul.ray-menu li a{
+	text-decoration: none;
+	color: #010101;
+	transition: .4s;
+}
+ul.ray-menu li a:hover{
+	color: #6278df;
+}
+ul.ray-menu li{
+	position: relative;
+}
+ul.ray-menu li ul{
+	position: absolute;
+	top:250%;
+	left: 0;
+	width: 230px;
+	background: #fff;
+	transition: .4s;
+	margin-left: 0;
+
+	opacity: 0;
+	visibility: hidden;
+	
+}
+ul.ray-menu li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	top: 180%;
+
+}
+ul.ray-menu li ul li{
+	list-style: none;
+	display: block;
+	padding:10px;
+	padding-left: 20px!important;
+	margin-left: -32px!important;
+	margin-right: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+/* banner section */
+.banner{
+	background: url(./img/mbr-10.jpg) no-repeat center center;
+	padding: 220px 0;
+
+	position: relative;
+	z-index: 1;
+}
+.banner::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0, .4);
+	z-index: -1;
+}
+.banner-caption p {
+	font-size: 28px;
+	font-weight: 300;
+}
+.banner-caption h2 {
+	font-weight: 500;
+	font-size: 50px;
+}
+.banner-caption .form-control {
+	padding: 13px;
+}
+.banner-caption .btn{
+	padding: 12px 0;
+	font-weight: 500;
+}
+
+/* Number counter section */
+.number{
+	background: #fff;
+}
+.number-text h1 {
+	font-weight: 500;
+	font-size: 52px;
+}
+.number-text p{
+	font-size: 20px;
+}
+/* About Section */
+.about{
+	background: #f7f9ff;
+}
+.about-text h2 {
+	font-weight: 500;
+	font-size: 40px;
+}
+.about-text p {
+	font-weight: 400;
+	font-size: 21px;
+}
+/* Application section */
+.application{
+	background: #fff;
+}
+.application-tittle h2 {
+	font-weight: 500;
+	font-size: 45px;
+}
+.application-tittle p {
+	font-size: 25px;
+}
+.a-caption{
+	height: 300px;
+}
+.a-caption-img {
+	width: 40%;
+	overflow: hidden;
+	border-radius: 5px 0 0 5px;
+}
+.a-caption-img img{
+	height: 100%;
+	width: auto!important;
+	max-width: inherit;
+	position: relative;
+	left: -120px;
+}
+.a-caption-img img:nth-child(3){
+	position: relative;
+	left: 0!important;
+}
+.a-caption-text{
+	width: 60%;
+	padding: 30px;
+}
+.a-caption-text p{
+	font-size: 16px!important;
+}
+/* Blog image section */
+.blog-img-tittle h2 {
+	font-size: 50px;
+	font-weight: 500;
+}
+.b-img{
+	position: relative;
+}
+.b-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 120, 223, .6);
+    transition: .4s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.b-img:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* pricing section */
+.pricing{
+	background: #f7f9ff;
+}
+.p-tittle h2 {
+	font-weight: 500;
+	font-size: 50px;
+}
+.p-tittle p{
+	font-size: 24px;
+}
+.pricing-item li{
+	list-style: none;
+}
+.card-body h2 {
+	font-weight: 500;
+	font-size: 42px;
+}
+.card-body{
+	padding: 30px;
+	padding-left: 40px!important;
+}
+.card-body p {
+	font-size: 23px;
+	color: #767676;
+}
+.card-body li {
+	margin-top: 30px;
+	font-size: 22px;
+	color: #767676;
+}
+.card-body li span {
+	margin-right: 15px;
+	color: #6278df;
+	font-size: 28px;
+	display: inline-block;
+	width: 20px;
+}
+.p-btn .btn-info{
+	background: #fff;
+	color: #6278df;
+	border-color: #fff;
+	font-weight: 600;
+	padding: 18px 30px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	transition: .4s;
+}
+.card-body:hover .p-btn .btn-info{
+	background: #6278df;
+	color: #fff;
+	border-color: #6278df;
+}
+.p-btn .btn-info:hover {
+	background: #000!important;
+	color: #fff;
+	border-color: #000!important;
+}
+/* Testimonial section */
+.text-caption h4 {
+	font-weight: 300;
+	color: #767676;
+	font-size: 26px;
+}
+.text-caption h2 {
+	font-weight: 500;
+	font-size: 44px;
+}
+.text-caption span {
+	font-size: 80px;
+	opacity: .2;
+}
+.text-caption p {
+	font-size: 20px;
+}
+.user-img{
+	margin-right: 20px;
+}
+.user-img img{
+	height: 60px;
+	width: auto;
+	border-radius: 50%;
+}
+.user-text h2 {
+	font-size: 23px;
+	position: relative;
+	top: 9px;
+}
+.user-text h4 {
+	font-size: 20px;
+	margin-left: -68px;
+}
+/* Team section */
+.team{
+	background: #f7f9ff;
+}
+.team-tittle h2 {
+	font-size: 45px;
+	font-weight: 400;
+}
+.team-tittle-text p {
+	line-height: 1.6em;
+	font-size: 20px;
+}
+.team-item img {
+	width: auto;
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+	left: 10px;
+	top: -40px;
+}
+.team-item h2 {
+	font-size: 23px;
+}
+.team-item h3 {
+	font-weight: 300;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+.team-item p {
+	font-size: 18px;
+}
+.team-btn .btn{
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+	font-weight: 600;
+	margin-top: 20px;
+	transition: .4s;
+}
+.team-btn .btn:hover{
+	background: #010101;
+	color: #fff;
+}
+/* Form section */
+.form-tittle h2 {
+	font-weight: 500;
+	font-size: 45px;
+}
+.form-item h2 {
+	padding: 20px;
+	font-size: 25px;
+	padding-top: 45px !important;
+}
+.form-item.shadow {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.f-ray{
+	margin-left: 16px;
+}
+.w-48 {
+	width: 48%;
+	display: inline-block;
+}
+.sum{
+	border: 1px solid #ddd!important;
+}
+.sum:focus{
+	box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .4);
+	border:1px solid #6278df;
+	border-color: #6278df!important;
+}
+.form-btn .btn {
+	background: #6278df;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 15px 30px;
+	border: 2px solid transparent;
+	transition: .4s;
+} 
+.form-btn .btn:hover{
+	background: #fff;
+	color: #6278df;
+	box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .6);
+	border: 2px solid #6278df;
+}
+/* Andriod section */
+.a-tittle p{
+	font-size: 27px;
+}
+.a-tittle h2 {
+	font-size: 40px;
+	font-weight: 500;
+}
+.a-btn .btn {
+	background: #fff;
+	border: 2px solid #5ba533;
+	padding: 15px 40px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #5ba533;
+	transition: .4S;
+}
+.a-btn .btn:hover{
+	background: #6278df;
+	color: #fff;
+	border-color:#6278df ;
+}
+.a-btn .rayh{
+	background: #fff;
+	border: 2px solid #6278df;
+	padding: 15px 40px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #6278df;
+	transition: .4S;
+}
+.a-btn .rayh:hover {
+	background: #5ba533;
+	color: #fff;
+	border-color:#5ba533 ;
+}
+/* Footer section */
+.footer{
+	background: #f7f9ff;
+	margin-bottom: 0!important;
+}
+.footer-text span{
+	color: red;
+}
